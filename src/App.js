@@ -7,6 +7,8 @@ import Home from './views/Home';
 import Login from './views/Login';
 import Register from './views/Register';
 import SinglePost from './views/SinglePost';
+import EditPost from './views/EditPost';
+import DeletePost from './views/DeletePost';
 
 
 function App() {
@@ -40,8 +42,9 @@ function App() {
                     <Route path='/register' element={<Register flashMessage={flashMessage} />} />
                     <Route path='/login' element={<Login flashMessage={flashMessage} logUserIn={setLoggedIn} />} />
                     <Route path='/create' element={<CreatePost flashMessage={flashMessage} loggedIn={loggedIn} />} />
-                    {/* <Route path='/edit' element={<EditPost flashMessage={flashMessage} loggedIn={loggedIn} />} /> */}
                     <Route path='/posts/:postId' element={<SinglePost />} />
+                    <Route path='/edit/:postId' element={<EditPost flashMessage={flashMessage} loggedIn={loggedIn} />} />
+                    <Route path='/delete/:postId' element={<DeletePost flashMessage={flashMessage} loggedIn={loggedIn} />} />
                 </Routes>
                 
             </div>

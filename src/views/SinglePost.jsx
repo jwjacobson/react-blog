@@ -19,8 +19,6 @@ export default function SinglePost() {
     return (
         <div>
             <PostCard post={post} />
-            {/* <Link className='btn btn-warning' to={`/posts`}>Edit</Link>
-            <Link className='btn btn-danger' to={`/posts`}>Delete</Link> */}
         </div>
     )
 }

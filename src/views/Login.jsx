@@ -47,7 +47,7 @@ export default function Login({ flashMessage, logUserIn }) {
 
     return (
         <>
-            <h3 className="text-center">Log In Here!</h3>
+            <h3 className="text-center">Log In</h3>
             <form action="" onSubmit={handleLogin}>
                 <div className="form-group">
                     <input type="text" name="username" className="form-control my-3" placeholder='Enter Username' />

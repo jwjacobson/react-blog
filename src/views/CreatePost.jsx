@@ -8,7 +8,7 @@ export default function CreatePost({ loggedIn, flashMessage }) {
 
     useEffect(() => {
         if (!loggedIn){
-            flashMessage('You must be logged in to create a new post', 'danger');
+            flashMessage('Log in first', 'danger');
             navigate('/login');
         }
     })
@@ -39,7 +39,7 @@ export default function CreatePost({ loggedIn, flashMessage }) {
                 if (data.error){
                     flashMessage(data.error, 'danger');
                 } else {
-                    flashMessage(`Post has been created`, 'success');
+                    flashMessage(`Post created`, 'success');
                     navigate('/');
                 }
             })
